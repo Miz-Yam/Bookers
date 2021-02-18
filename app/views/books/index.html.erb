@@ -13,7 +13,7 @@
       <tr>
         <td><%= book.title %></td>
         <td><%= book.body %></td>
-        <td><a class="show_259340" href="/books/259340">Show</a></td>
+        <td><%= link_to "Show", book_path(book) %></td>
         <td><a class="edit_259340" href="/books/259340/edit">Edit</a></td>
         <td><a data-confirm="Are you sure?" class="destroy_259340" rel="nofollow" data-method="delete" href="/books/259340">Destroy</a></td>
       </tr>
