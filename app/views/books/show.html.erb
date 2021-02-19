@@ -8,5 +8,5 @@
   <%= @book.body %>
 </p>
 
-<a class="edit_259354" href="/books/259354/edit">Edit</a> |
+<%= link_to "Edit", edit_book_path(@book) %> |
 <a class="back" href="/books">Back</a>
