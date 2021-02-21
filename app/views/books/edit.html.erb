@@ -1,5 +1,6 @@
 <h1>Editing Book</h1>
 <%= form_with model:@book, local:true do |f| %>
+  <%= render partial: 'layouts/form_error', locals: {book: @book } %>
   <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title %>
